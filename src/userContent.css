@@ -41,6 +41,8 @@
         background-color: var(--grey3) !important;
     }
 
+    pre,
+    code,
     .morelink,
     .tabmenu a {
         background-color: var(--grey4) !important;
