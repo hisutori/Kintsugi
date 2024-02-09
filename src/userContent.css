@@ -1,0 +1,236 @@
+@-moz-document domain("old.reddit.com") {
+    /* Palette */
+    :root {
+        --grey1: #c7c7c7;
+        --grey2: #747474;
+        --grey3: #555;
+        --grey4: #3d3d3d;
+        --grey5: #232323;
+        --blue: #93b4c0;
+        --green: #abcb9c;
+        --red: #e76b6b;
+        --orange: #e8ae6b;
+        --yellow: #d3ce9d;
+    }
+
+    body {
+        accent-color: var(--blue);
+    }
+
+    input,
+    :where(.redditname, .tabmenu, .morelink, #header-bottom-right, #sr-header-area) a,
+    .titlebox,
+    .title,
+    .dropdown-title,
+    .expand,
+    .toggle.flairtoggle,
+    .trophy-name,
+    .md,
+    #header-img.default-header {
+        color: var(--grey1) !important;
+    }
+
+    input,
+    textarea,
+    .linkinfo,
+    #header-bottom-right {
+        background-color: var(--grey2) !important;
+    }
+
+    #header {
+        background-color: var(--grey3) !important;
+    }
+
+    .morelink,
+    .tabmenu a {
+        background-color: var(--grey4) !important;
+    }
+
+    body,
+    .side,
+    .trophy-area .content,
+    .toggle.flairtoggle,
+    .md,
+    #sr-header-area {
+        background-color: var(--grey5) !important;
+    }
+
+    :where(.md, .help-toggle) a,
+    .thing.title {
+        color: var(--blue) !important;
+    }
+
+    a.author,
+    .userkarma {
+        color: var(--green) !important;
+    }
+
+    a.author.submitter,
+    .submitter,
+    .selected a,
+    .spoiler-stamp,
+    .nsfw-stamp,
+    #noresults {
+        color: var(--red) !important;
+    }
+
+    .stickied-tagline,
+    .moderator {
+        color: var(--orange) !important;
+    }
+
+    .subreddit {
+        color: var(--yellow) !important;
+    }
+
+    /* Animations */
+    .thumbnail {
+        border-radius: 4px !important;
+    }
+
+    .thumbnail img {
+        transform-origin: 50% 65% !important;
+        transition: transform 0.25s, visibility 0.25s ease-in !important;
+    }
+
+    .thumbnail img:hover {
+        transform: scale(1.2) !important;
+    }
+
+    /* Common */
+    .flairrichtext,
+    .linkflairlabel,
+    .flat-list.buttons,
+    .score,
+    #header {
+        user-select: none !important;
+    }
+
+    .morelink,
+    #mail,
+    #chat,
+    #header-img.default-header {
+        background-image: none !important;
+    }
+
+    .md,
+    .flairrichtext,
+    .linkflairlabel,
+    .linkinfo,
+    .morelink,
+    .tabmenu a {
+        border: none !important;
+    }
+
+    .grippy,
+    .reddiquette,
+    .premium-banner-outer,
+    .giftgold,
+    .footer-parent,
+    .sidebox.create,
+    .thumbnail.invisible-when-pinned.self.may-blank,
+    .thumbnail.invisible-when-pinned.default.may-blank,
+    .thumbnail.spoiler,
+    .domain,
+    .listingsignupbar,
+    .commentsignupbar,
+    .expando-button,
+    .listing-chooser,
+    .promotedlink,
+    .rank,
+    .nub,
+    .flairemoji,
+    .post-crosspost-button,
+    #redesign-beta-optin-btn,
+    #eu-cookie-policy,
+    #sr-more-link {
+        display: none !important;
+    }
+
+    /* Misc */
+    #header {
+        position: sticky !important;
+        top: 0 !important;
+
+        border-bottom: 1px solid #000 !important;
+        box-shadow: 0 5px 5px -5px #000 !important;
+    }
+
+    #header-img.default-header {
+        width: fit-content !important;
+        height: fit-content !important;
+        margin: 0 8px 0 8px !important;
+
+        font-size: 24px !important;
+        text-indent: 0 !important;
+    }
+
+    .titlebox :where(ol, ul) {
+        padding-left: 19px !important;
+    }
+
+    .tabmenu {
+        margin-left: 0 !important;
+    }
+
+    .tabmenu li a {
+        border-top-left-radius: 4px !important;
+        border-top-right-radius: 4px !important;
+
+        font-weight: normal !important;
+    }
+
+    #mail,
+    #chat {
+        display: inline !important;
+        position: initial !important;
+
+        width: fit-content !important;
+
+        text-indent: 0 !important;
+        vertical-align: initial !important;
+    }
+
+    #search input {
+        font-size: smaller !important;
+        font-family: sans-serif !important;
+    }
+
+    input,
+    textarea,
+    .morelink {
+        border-radius: 4px !important;
+    }
+
+    .flairrichtext,
+    .linkflairlabel {
+        padding: 0 4px !important;
+
+        font-size: 10px !important;
+        font-weight: 500 !important;
+        line-height: 16px !important;
+        text-transform: uppercase !important;
+    }
+
+    .panestack-title {
+        border-bottom: none !important;
+    }
+
+    .thing p {
+        text-align: justify !important;
+        hyphens: auto !important;
+    }
+
+    .comment .child {
+        border-left: 1px solid var(--grey4) !important;
+    }
+
+    .usertext.grayed div.md {
+        margin: 0 !important;
+    }
+
+    .sidecontentbox.content,
+    .usertext.grayed > div {
+        padding: 0 !important;
+    }
+}

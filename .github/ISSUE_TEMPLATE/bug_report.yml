@@ -1,0 +1,65 @@
+name: Bug report
+description: File a bug report
+labels: 'bug'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Screenshots are welcome!
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: What are the steps to reproduce the bug?
+    validations:
+      required: false
+  - type: input
+    id: url
+    attributes:
+      label: On which page does the error occur?
+      description: In order to protect your privacy, you can omit this information.
+      placeholder: https://old.reddit.com/r/...
+    validations:
+      required: false
+  - type: dropdown
+    id: version
+    attributes:
+      label: What version of Mozilla Firefox are you running?
+      options:
+        - 120
+        - 121
+        - 122
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 128
+        - 129
+        - 130
+        - 131
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+        - 137
+        - 138
+        - 139
+        - 140
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: extensions
+    attributes:
+      label: Do you use any extensions, such as uBlock Origin or Dark Reader?
+      description: Please provide a list.
+    validations:
+      required: false
