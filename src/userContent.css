@@ -76,6 +76,10 @@
         color: var(--red) !important;
     }
 
+    .usertext.border .usertext-body {
+        background-color: transparent !important;
+    }
+
     .stickied-tagline,
     .moderator {
         color: var(--orange) !important;
@@ -216,6 +220,10 @@
 
     .panestack-title {
         border-bottom: none !important;
+    }
+
+    .usertext.border .usertext-body {
+        border-left: solid 1px var(--yellow) !important;
     }
 
     .thing p {
