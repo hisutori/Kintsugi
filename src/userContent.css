@@ -208,10 +208,6 @@
         border-radius: 4px !important;
     }
 
-    a.title:hover {
-        text-decoration: none;
-    }
-
     .flairrichtext,
     .linkflairlabel {
         padding: 0 4px !important;
