@@ -209,7 +209,7 @@
     }
 
     a.title:hover {
-        text-decoration: none;
+        text-decoration: underline !important;
     }
 
     .flairrichtext,
