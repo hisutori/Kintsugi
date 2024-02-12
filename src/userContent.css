@@ -26,7 +26,8 @@
     .toggle.flairtoggle,
     .trophy-name,
     .md,
-    #header-img.default-header {
+    #header-img.default-header,
+    #pref-form {
         color: var(--grey1) !important;
     }
 
